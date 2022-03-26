@@ -1,0 +1,134 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+class Example
+
+ {
+
+  private: int val; // access specifier is private
+
+  public: 
+
+  //function to assign value 
+
+  void init_val(int v)
+
+  {
+
+	 val=v;
+
+	} 
+
+  //function to print value 
+
+  void print_val()
+
+  {
+
+   cout<<"val:"<<val<<endl; 
+
+  }
+
+ }; 
+
+int main()
+
+{
+
+ //create object int a=100; cin<a;
+
+ Example Ex; 
+
+ Ex.init_val(100); 
+
+ Ex.print_val(); 
+
+return 0; 
+
+} 
+
+4:07 PM
+#include <iostream>
+
+using namespace std;
+
+
+
+class Example
+
+{
+
+	private:
+
+		int val;
+
+	public:
+
+		//function declarations
+
+		void init_val(int v); // void init_val(int v) {jshjks}
+
+		void print_val();
+
+};
+
+//syntax return_type class name::function name(){}
+
+//void Example::init_val(int v){}
+
+// void Example::print_val(){cout<<val;}
+
+//function definitions ouside class function example
+
+void Example::init_val(int v)
+
+{
+
+	val=v;
+
+}
+
+
+
+void Example::print_val()
+
+{
+
+	cout<<"val: "<<val<<endl;
+
+}
+
+int main()
+
+{
+
+	//create object
+
+	Example Ex;
+
+	Ex.init_val(50);
+
+	Ex.print_val();
+
+	
+
+	return 0;
+
+}
+
+
+
+
+
+
+
+
